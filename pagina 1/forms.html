@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./forms.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img class="heart" src="/images/heart.webp" alt="logo">
+            </div>
+            <div class="links">
+                <a href="#contact">Contact</a>
+                <a href="#contactform">Form</a>
+                <a class="btn0" href="mainpage.html">Home</a>
+            </div>
+        </nav>
+
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>Vul hieronder het formulier in om jouw favoriete parfum te bestellen. Geef je voorkeuren door en wij
+                zorgen ervoor dat je bestelling snel wordt verwerkt!</p>
+        </section>
+    </header>
+
+    <main>
+        <h2>Form</h2>
+
+        <section id="contactform">
+            <form action="/bedankt.html">
+                <section id="names">
+                    <div class="textfield" id="firstname">
+                        <label for="firstname">Voornaam</label>
+                        <input required type="text" class="input-bar" placeholder="Voornaam" name="firstname"
+                            id="firstname">
+                    </div>
+                    <div class="textfield" id="lastname">
+                        <label for="lastname">Achternaam</label>
+                        <input required class="input-bar" type="text" placeholder="Achternaam" name="lastname"
+                            id="lastname">
+                    </div>
+                </section>
+
+                <section class="email">
+                    <div id="email" class="textfield">
+                        <label for="email">E-mail</label>
+                        <input required class="input-bar" type="email" placeholder="Voer e-mailadres in..." name="email"
+                            id="email">
+                    </div>
+                </section>
+
+                <section id="information">
+                    <div id="address" class="textfield">
+                        <label for="address">Woonplaats</label>
+                        <input required class="input-bar" type="text" placeholder="Voer woonplaats in..." name="address"
+                            id="address">
+                    </div>
+                    <div id="birthday" class="textfield">
+                        <label for="birthday">Geboortedatum</label>
+                        <input type="date" class="input-bar" id="birthday" name="birthday">
+                    </div>
+                </section>
+
+                <section id="options">
+                    <div id="choose" class="textfield">
+                        <label for="teachers">Kies parfum:</label>
+                        <select required id="perfums" name="perfums">
+                            <option value="" disabled selected>Parfum...</option>
+                            <option value="docent1">parfum 1</option>
+                            <option value="docent2">parfum 2</option>
+                            <option value="docent3">parfum 3</option>
+                        </select>
+                    </div>
+                </section>
+
+                <div class="textfield">
+                    <label for="w3review">Verdere opmerkingen:</label>
+                </div>
+                <div>
+                    <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                    </textarea>
+                </div>
+
+                <section class="conditions">
+                    <input required type="checkbox" id="conditions" name="conditions" value="conditions">
+                    <label for="conditions">Ik ga akkoord met de algemene voorwaarden.</label>
+                </section>
+
+                <div>
+                    <button class="btn" type="submit">bestellen</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo">
+            <img class="heart" src="/images/heart.webp" alt="logo">
+        </div>
+        <div class="links">
+            <p>Gemaakt door Isaliah</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

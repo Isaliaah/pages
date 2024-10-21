@@ -1,0 +1,167 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5vh;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    gap: 5%;
+}
+
+body {
+    border: 3px solid rgb(219, 189, 255);
+}
+
+.heart {
+    width: 7%;
+}
+
+.logo {
+    flex: 1;
+}
+
+#contact {
+    text-align: center;
+    background-image: url(/images/stars2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 3px solid rgb(219, 189, 255);
+    border-bottom: 3px solid rgb(219, 189, 255);
+}
+
+h2 {
+    text-align: center;
+}
+
+#contactform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input,
+textarea,
+select {
+    font-size: 1.1rem;
+}
+
+#names {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+
+#firstname, #lastname {
+    flex-direction: column;
+}
+
+.email {
+    display: flex;
+}
+
+#email {
+    flex-direction: column;
+    
+}
+
+#information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+
+#address, #birthday {
+    flex-direction: column;
+}
+
+#options {
+    display: flex;
+}
+
+#choose {
+    flex-direction: column;
+}
+
+.conditions {
+    gap: 0;
+}
+
+input[type=text], [type=email] {
+    padding: 8px;
+}
+
+form .textfield {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.category {
+    display: flex;
+}
+
+form .radio-button {
+    display: flex;
+    flex-direction: row;
+}
+
+.conditions {
+    display: flex;
+    align-items: flex-start;
+    margin: 2vh 0;
+}
+
+.btn0 {
+    background-color: rgb(219, 189, 255);
+    width: fit-content;
+    padding: 7.5px;
+    border-radius: 10px;
+}
+
+.btn {
+
+    margin: 2vh 0;
+    background-color: rgb(219, 189, 255);
+    width: 60%;
+    padding: 1vh;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5vh;
+    border-top: 3px solid rgb(219, 189, 255);
+}
+
+@media (max-width:500px) {
+
+    .textfield {
+        flex-direction: column;
+    }
+}
